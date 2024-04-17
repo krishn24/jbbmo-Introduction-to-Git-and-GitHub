@@ -1,0 +1,303 @@
+Bootstrap Grid system is a collection of reusable code for making responsive web design
+It is made up of - Containers - Rows - columns
+It uses 12 column system for layout
+
+Bootstrap follows Mobile first Approach design
+
+
+Container holds  - row and columns
+
+<div class="container"></div>
+<div class="row"></div>
+<div class ="col-12></div>
+
+to have two columns
+
+<div class="container"></div>
+<div class="row"></div>
+<div class ="col-12><h1> Column1 </h1></div>
+
+<div class="container"></div>
+<div class="row"></div>
+<div class ="col-12><h1> Column2 </h1></div>
+
+When we place more than 12 grid in a single row, the extr grid columns will wrap in a new line
+
+Bootstrap BOX property:
+
+Margin:
+We can get spacing between two HTML element using Margin
+To give space on particular side we use margin varients:
+margin-top
+margin-bottom
+margin-left
+margin-right
+
+bootstrap class names:
+m 
+mb- 
+mt- 
+ml-
+mr-
+
+Note: avoid using margin-left and margin-right - they give unexpected result
+
+>>Similar to margin we have CSS padding properties and Bootstrap class names
+padding         p-
+padding-left    pl-
+padding-right   pr-
+paddding-top    pt-
+padding-bottom  pb-
+
+>>We have Bootstrap Background color utilities:
+bg-primary      Blue
+bg-secondary    greay color
+bg-success      Green
+bg-waring       yellow
+bg-light        white
+bg-dark         black
+bg-info         looks like Blue
+bg-danger       red
+
+>>Navbar is a navigation header at the top of the page
+
+The Navbar code is placed inside the <body></body> tag
+
+HTML elements are two types:
+>Block elements
+>inline elements
+
+-Block elements always starts in a new line
+-each element will take up entire width
+ex:
+    h1
+    p
+    div 
+
+-Inline elements take the space as much as the need.
+-Inline element do not occupy entire horizontal or width
+ex:
+    button
+    img
+    a
+
+<h1>Heading</h1>  #takes einter width space
+<p> The <a class="link-text" href="url" >Taj Mahal</a> is one of the seven wonders of the world. </p>
+
+link-text is in CSS page with background-color: yellow
+gives the "Taj Mahal" yellow background.
+when you click Taj Mahal it will take you to the url location
+
+
+>we can align HTML Block level elements horizontally using CSS "margin" property
+
+if we specify "text-align" property to the HTML block level element, it aligns the text or HTML inline elements inside it.
+
+
+margin: auto;  #aligns child elements horizontally centerd
+--CSS
+.nav-item-center {
+    margin: auto;
+}
+
+--HTML
+<div class=" nav-items-center">
+<a class="..>
+<a class="..>
+<a class="..>
+</div>
+
+>with margin-right: auto   takes up all the available space in the right, and elemtns aligned to the left
+marign-left: auto   >elements alinged to right
+
+Bootstrap utility:
+m-auto
+ml-auto
+mr-auto
+
+>>CSS Selector and Inheritance:
+CSS selector are used to select HTML elements
+
+Class selector (.)
+ID selector (#)
+type or tag selector (<html tag>)
+
+class selector select html tag based on class name
+
+>>In CSS the styles are applied based on three fundamental concepts:
+1) Inheritance
+2) Specificity
+3) Cascade
+
+>Inheritance: HTML elements inside anohter HTML elemets become child 
+While the outer HTML element is the parent element
+
+In Inheritance, the properites of the parent will be shared to the child
+
+there are two types of inheritance:
+>Inherited properties
+>Non-inherited properties
+
+In inherited properties, the parent properties will shared to the child
+ex:
+    font-family
+    font-style
+    font-weight
+    text-align
+
+    list-style type
+
+    color properties
+
+Non-inherited properties: 
+ex:
+    -Box properties
+        width
+        height
+        margin
+        padding 
+        border-style 
+        border-width 
+        border-color 
+        border-radius
+
+    -CSS background properties
+        background-color
+        background-image
+        background-size
+    -text decorator
+
+
+>>Specificity is how the browser decided which CSS value are the most relavent to the HTML element.
+Specificity order is (highest to lowest):
+>Id > class > type
+
+Inline style is more specific than any other selectors (ID/class/type)
+
+A class selector is more specific than type selector
+
+<h1>Heading 1</h1>  #text will be in greay
+<h2 class="heading"> Heading 2 </h1>  # text will be in green
+
+--CSS
+h {color: grey;}
+.heading{color: green;}
+id {color: yellow;}
+
+An ID selector is more specific than class selector
+<h1>Heading 1</h1>  #text will be in greay
+<h2 class="heading"> Heading 2 </h1>  # text will be in green
+<h2 class="heading" id="heading5">Heading 3</h2>   # text will be in yellow
+
+>>Inline styles 
+CSS Inline styles are directly applied in HTML page itself
+It uses CSS style attribute with CSS property value assigned
+
+syntax:
+    <tag style = "property1:value1; property2:value2..">
+    content
+    </tag>
+
+A style attribute can have one or mre CSS property values
+
+<h1>Heading 1</h1>  #text will be in greay
+<h2 class="heading"> Heading 2 </h1>  # text will be in green
+# text will be in white with orange background
+<h2 class="heading" id="heading5" style = "color:white; background-colo:orange;">Heading 3</h2>   
+
+>Inline style is not recommended:
+-inline style is not re-usable
+-without inline style code is more readable
+
+>> Cascade
+When CSS ruleset has equal specificiy, the last one in the rule set will be given preference:
+
+--CSS
+.style-1 { color: white;}
+.style-2 {color: orange;}
+
+--HTML
+
+<h1 class="style2 style1"> Heading1 </h1>  # text will be in orange 'cause of Cascade
+
+>> !important is another special selector that makes a CSS property more specific.
+-if there are multiple !important the order of preference will be the last one (cacade follows)
+
+>>Fulid container
+container-fluid is a full width container, spanning the entire width of the viewport
+
+-when we do not want left and right spacing then use container-fluid
+
+>>Transperant - key word that makes the HTML transparent allowing to see the background
+
+ex:
+.custom-button{background-color: transparent;}
+
+Bootstrap also has bg-transparent class name
+
+>> To define size of child element with relavent to the parent element, we can use percentages.
+
+<h1 class="Box-width-in-pxls> Heading </h1>
+<h1 class="Box-width-in-pct"> Box2 </h1>
+
+--CSS
+.Box-width-in-pxls {width: 200px}
+.Box-width-in-pct { width: 50%}
+
+>>we have bootstrap sizing utilities:
+
+CSS properties          Bootstrap
+width: 25%                  w-25
+width:50%                   w-50
+width:75%                   w-75
+width:100%                  w-100
+
+*by default the height of the element automatically adjusted based on the width
+
+>>to apply shadow effect to the HTML element we can use
+shadow-none 
+shadow
+shadow-sm
+shadwo-lg 
+
+>>Bootstrap order class names are used to change the visual order of the flex items that
+appears inside the Flex container
+
+ex: order-1, order2, order-3
+we can use any order ranging from 0 to 12
+
+>these order class names are responsive
+order-1
+order-sm-2
+order-lg-3
+
+ex:
+
+<div class="d-flex">
+    <img.. class="image order-1>
+    <img.. class="order-3>
+    <img.. class="order-2>
+   
+</div>
+
+>>using Bootstrap display utilities
+we can hide or show HTML elements responsively
+
+d-none #will hide the html element
+d-inblock or d-block  #will show the HTML element
+
+d-none d-md-block --element will be shown in medium devices..
+
+>>>Gradient: special type of background created by transition of two or more colors.
+-Linear Gradient
+-Radial Gradient
+
+--CSS
+.linear-gradient-background {
+    background-image: linear-gradient(#color, #color)
+    height: 100vh
+}
+
+-we can change the direction too:
+
+    background-image: linear-gradient(to right, #color, #color2)

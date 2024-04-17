@@ -1,0 +1,211 @@
+What is Agile?
+Agile is an approach to managing and working with project
+-It relates to managing and working with projects 
+
+-In other words - project management and product development 
+
+-Agile is simple approach to managing complexity
+-Agile approach can be applied to any tpye of project 
+-Most modern software projects use Agile methodology
+
+other uses:
+-Agile also used for managing service tickets
+>related to software issues or restaurant orders
+
+-In a company Agile can be used in any department:
+-for example: HR department can manage the flow of hiring new employees
+-another ex: Marketing team might use for new marketing initiative.
+
+-Agile can be used for personally too:
+>for writing a book: Agile technique will help you to focus and write better book
+>If you want to build a rocket you can use Agile (SpaceX uses Agile to continously improve the product)
+--------------------------
+CHARACTERISTICS OF AGILE PROJECTS:
+-Each project is unique, but have common characteristics
+    >Incremental 
+    >iterative
+    >Focus on value
+    >An empowered team
+
+
+
+>Incremental:
+-Agile products are built incrementally
+-this means that instead of planning, building and releasing the product all at once, 
+small valuable increment of the product are planned and released in a succession.
+
+-An increment may actually go to the customer or the increment may be
+releasable subject to a business decision.
+
+-either way, each increment should be usable and valuable to teh customer.
+
+>Iterative:
+-Agile products are iterative.
+-This means that you continously obtain feedback
+from both users and from inside the team allowing
+continous improvement.
+
+>Focus on Value:
+-Agile projects relentlessly focus on value.
+-After current work, the team again decides what is the 
+next highest value thing to work on.
+-This is based on continous feedback from the team and from users of the product.
+
+>An empowered team:
+-Agile projects have an empowered team.
+-This means that the team decides how to organize and how to accomplish its work.
+-You can think of team as containing a distributed brain where each member continously helps make decisions.
+
+
+BENEFITS OF AGILE PROJECTS:
+-An agile approach to managing projects is often chosen because the results are often better than traditional approaches.
+-This is especially true when the project invloves a lot of uncertainty.
+
+For the customers:
+>Desirable product
+>High quality
+
+-The customer is receiving a desirable product.
+-This is because the customer consistently providess feedback in the development of the product.
+-The team is always focused on delivering the highest priority features which means
+customers are getting the most important features earlier than they would using traditional project management techniques.
+
+-Agile teams are consistently matching what they build to what the customer is asking for.
+-Agile projects also lead to higher quality.
+-The assumption is that team members are knowledgeable and will build with high-quality at all times.
+-Mistakes and unaticipated issues arise - in Agile projects, feedback loops are short and mistakes are expected to be fixed when they are discovered.
+
+
+Benefits For the team:
+>Higher job satisfaction
+>Better innovation
+>Lower costs
+>Lower risk
+>Predictable deliveries
+
+-Agile teams often have higher job satisfaction.
+This is due to the culture of empowering team members to define the best way to work together.
+-Agile team embraces the learning process involved.
+
+-Agile products have lower costs than traditional projects.
+-This is because you are consistently receiving feedback and focusing on value.
+-You are not performing wastful activities.
+-Any problems found are resloved when they are discovered leading to lower re-work costs.
+
+-the risk is lower because, you are getting continous feedback on what you are doing.
+-Agile projects also result in predictable deliveries.
+-Even if an Agile project has a strict deadline, the commitment can be made because you always have a shippable product.
+-*What varies is the number of high value features that are in the product.
+-this reduces the overall risk of the project.
+
+Q) To ensure an agile project's delivery by a particular date, which one of these is usually not certain?
+Ans) the number of features delivered
+
+certain:
+>The quality of the product
+>The number of team members working on the project
+
+Q) Agile projects uses ans) an experimental approach.
+
+-We can use the scientific method not only for the discovery, but also to accomplish the work of a project.
+>in addition to creating Hypothesis, 
+we plan some work
+then do the work 
+we then learn from the feedback on the work and process.
+
+Hypothesis > Experiment > Observe/ learn ..to Hypothesis
+
+-This iterative learning loop of the scientific method is the foundation of many processes.
+-The main idea is to continously learn and improve using iterations.
+
+ex:
+Plan > do > check > act / adjust (PDCA)
+is a concept that improves buiness process
+
+-plan > build > release involvoed in software development.
+
+Spotify has same approach:
+think > build > ship > tweak
+
+>> AGILE vs WATERFALL
+
+The traditional way to manage projects is also known as the waterfall approach.
+-In waterfall approach, the entire product is developed in distinct phases.
+        >Analyze
+        >Design
+        >Build
+        >Test 
+        >Release 
+
+Analyze: Customer requirements are defined
+         output is requirements document
+
+Design: Features related to the requirments are designed.
+        output: desing document
+
+Build: using the desing document, features are then built.
+
+Quality: Once product is build it moves to the testing phases
+
+Release: Once the product passes the Quality Assurance, it moves for manufacturing or release.
+
+>the difference is there is no looping in waterfall method.
+>in this method, one team pass their work to another
+
+Downsides of waterfall:
+-you cannot predit the future
+-High value features are not correclty identified
+-Until the customer actually tries a feature, they do not really know if they will use it.
+-you build unnecessary features (there is a waste)
+-take longer to build them
+-falls behind the schedule 
+-market may change during the development
+-change is hard and expensive
+-outdated in many cases due to its setup cost 
+>>When is waterfall used:
+
+
+>In waterfall method you develop a product phase by phase
+>In Agile, there are many small iterations where each phase are quickly
+the end of each iterations results in a product increment.
+
+Q) Agile development assumes all the team members are involved in project planning.
+
+
+----------------------
+Jira:
+Atlaasian Jira tool help work with Agile processes
+
+Jira software is used to 
+        manage, 
+        develop and 
+        communicated about work/projects
+
+-Jira is easy to get started with,
+-It can be used in a way that it matches your Agile processes.
+-Jira can even be used if you follow waterfall approach to project management.
+
+>Jira is organized around hierarchy.
+-the highest level is what we call the "application level"
+-A single Jira application can contain any number of projects.
+
+Jira (Collection of Projects) - Application level
+-project A (collection of issues) - project level 
+-Issue  (Work item)  - issue level
+
+>>Navigation in Jira:
+you can see all you projects in: project menu
+-to see all the works you done: your work
+When yo click on specific projects you can see a side bar:
+ -you can see the work items and their details by clicking on "issues"
+ -the work items/issues helps to build features
+
+- you can search for specific issue in search bar: 
+
+
+
+
+
+
+
+

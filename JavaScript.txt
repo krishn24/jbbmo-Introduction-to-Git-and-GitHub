@@ -1,0 +1,365 @@
+All the interactivity that you experience online like drop down menu, auto-complete featurs is because of JS.
+-your shopping apps, social media - is possible by JS
+
+
+-it is well known as programming language of the web
+-it is used for both front and back end development, and the creation of mobile applications.
+-you can even create mobile applications using JavaScript and React
+
+How JavaScript used in the real world?
+-language of the internet
+-in web development the only available option is JS hence it is becoming more popular
+-Where as we have many options for developing games using multiple languages choices.
+
+-used for web stack
+-used for front end and back end 
+-JS is the only front end language 
+
+-easy to learn compared to 
+
+---
+After installing the VS code:
+go to the extension > search for code runner
+and install it.
+-to ensure it is installed, check for the extension is enabled globally @ bottom of install button
+google> Node.js > download> install win version
+install the Node.js 
+
+Open an new file > 
+select language> select js (or search for js)
+
+view > terminal
+drag the output to the left side 
+
+now you can close the terminal.
+
+ex:
+
+console.log('Hello world')
+run 
+
+now I set up vs code with code runner
+
+
+programming language: 
+Programming language acts as a bridge that facilitates communication
+between computers and people.
+
+Softwares: Applications that are developed using programming language
+Hardware: physical machines
+
+Binary: Binary is representation of machine language.
+these 0 and 1 are electrical switches
+CPU understands or comprehend these 0 and 1
+These series of 0's and 1's is known as - Low level languages
+(understood by a computer's CPU)
+
+High level languages:
+High level languages are converted to binary code so that a CPU can work with them
+
+
+Why JavaScript?
+-JavaScript is the language that builds interactivity into web pages.
+-It is the language of web.
+-Almost every website run JavaScript in some form or another.
+- inception 1995
+-examples: interactive maps, client side form validation
+
+-Alternative to JavaScript:
+>VBScript
+>TypeScript
+(Even TypeScript compiles down to JavaScript so browser can understand)
+
+-Since JavaScript is one of the most widely available and frequently used methods of interacting with the browser on the client side
+the language became immensely popular.
+
+-simply put, browsers speak JavaScript.
+-easy to use 
+-Vanilla JavaScript: It is used on the client side as a plain JavaScript known as Vanilla JavaScript.
+-It has many frameworks:
+>React
+>Vue
+>D3
+-It is also used on the server as Node.js
+and more recently Deno 
+
+-why choose JavaScript:
+>it is the foundation of technology of everything you do online with a huge variety of uses.
+>plus it's easy to get started with 
+>It is considered more accessible programming language
+>for new developers it is approachable
+>skilss are in demand 
+
+
+-to work with JavaScript
+>install code editor
+>set up Node.js
+>NPM 
+-for beginers, its enough to open the developer tools on the web browser
+
+>Programming in JavaScript:
+-JavaScript can provide a native feel to apps
+-JavaScript is used to power websites
+-Using JavaScript and React Native developers can create mobile apps
+-It communicate with databases
+-It is used to build mobile apps using technology like React Native
+-It is used to program devices known as IoT Internet of things.
+-It provides Native fields to web apps. (iuser interface elements: text input fields, checkboxes, radio buttons, dropdown menu, date picker..)
+
+In earyl 2000s, different companies built internet browsers and were refered to as browser vendors.
+-Different browsers came different behaviors with various discrepancies b/w other browsers.
+-This resulted in developers sometimes having to write separate JavaScript code for different browsers.
+
+-this was not the best use of developer time and could lead to a frustrating experience for end-suers.
+
+-to solve the issue library named jQuery was introduced.
+-All the developer needed to import jQuery and write code using its features.
+-this code would then work across all browsers.
+-jQuery solved the incompatibility issues.
+
+-over the time more new problem appeard and new solutions were needed
+-in 2011 React was introduced
+-React solved many of the issues associated with 
+    creating, 
+    updating and 
+    maintaining complex websites.
+
+>Many other technologies appeared attempting to do the same:
+-Knockout
+-Backbone
+-Angular
+-Ember
+-Vue
+-Alpine
+
+NOTE: It is not necessary to lear all the different technologies associated with JavaScript.
+
+-To be well-rounded developer, you need to learn and master the basics of plain JavaScript without the frameworks.
+-Once you have the foundation, the pathway will become easier for you to learn a framework built on top of JavaScript, such as React.
+
+=====================================
+Comments in JavaScript:
+
+In JavaScript we can write the comments in two ways:
+>Single-line comments
+>Multi-line comments
+
+>Single-line comment is created using tow forward-slash
+// this is a comment
+
+>Multi-line comments
+/* 
+this is
+a 
+multi
+line
+comment
+*/
+
+/* another way of writing multi-line comments in single line */
+
+>Using comments you can
+-freely express your idesas about the code you write
+-you can add comments to the code that is already exits
+-comments are inted for the future self, or for colleagues on development terminal
+-you can comment out some working code in JavaScript to prevent from running
+
+-you can make the code as "to do" or "to improve" or simply explain what a given piece of code does.
+
+
+>>Semi-colon in JavaScript.
+Similar to period . in English sentenses to separate sentenses JavaScript uses
+semi-colon to set bounderies (delimit) parts of the code.
+
+>>Automatic Semi-Colon Insertion (ASI)
+Browser has a feature known as "Automatic Semi-colon Insertion" - in case there is a missing semi-colon where there should be one.
+
+-It means for developers that it makes no difference if a semi-colon is added or not, since the browser is likely to figure it out anyway.
+
+-To get started with JavaScript, all you need is a browser.
+-open the browser > right click - select "Inspect"
+-Now you see the Developer tools
+-Click on console tab to open the console
+-You can type any JavaScript command you like into the DevTools console
+
+>SHIFT + ENTER key to go to the next line
+
+ENTER key is used to run the JavaScript
+
+-you can use the VS editor with Code Runner extension or
+-use Chrome browser itself, and running the code inside the DevTools console
+
+console.log("%cHello World!", "color:blue; font-size:40px");
+
+-if you add the %c after the " character, you can style the console output by adding the CSS code to style the output in console.
+
+>>To print multiple words use concatination symbol +
+console.log("Hello " + "Harekrishna" + " world");
+
+------------------------
+Variables:
+
+Short cut to open the console is:
+F12 on the web browser.
+
+-In JavaScript you can declare a variable with the keyword var.
+var allows you to save a variable so that you can re-use it in future.
+
+# to decalre a variable 
+#variable declaration
+
+var people;
+
+# assigning a value to the variable
+
+people = "harekrishna";
+
+# to see the contents of the variable
+
+type:
+
+person
+# harekrishna
+
+console.log("Hello", person)
+
+#we can change the value of the variable
+
+person = "krishna"
+
+
+var greetings = hi;
+
+====================================
+Data types
+
+there are 7 data types:
+>String 
+>Number 
+>Boolean 
+>Null 
+>Undefined
+>BigInt 
+>Symbol 
+
+Data is collective term for the values, or information.
+The values differ and they needed to be stored in specific data types
+
+-in JavaScript strings are enclosed either in single or double quote
+
+
+https://realpython.com/python-filter-function/
+
+Null represents abscence of value 
+undefined data type: refers to a variable not yet assigned a value.
+
+numbers - to perform calcuations, prices 
+
+Boolean data type: True and False 
+for decision makeing
+
+ES6 version of JS: introduced two new data type:
+to work with more complex tasks
+
+> BigInt: data type that accomodates a greater range of numbers. (than tha number data type)
+> Symbol: Symbol data type used as a unique identifier.
+  Think of it having multiple boxes with the same label and using different serial numbers to avoid mixing them up.
+
+Operaters in JavaScript:
+
+Addition operator + 
+Substraction operatro - 
+Division / 
+Multiplication *
+
+comparision operaters:
+> (gretater)
+<
+==  equal to 5 == 5
+!=
+
+>Logical operator:
+&& - check two /more cond are True
+a>5 && a<10
+
+|| or operator
+check atleast one cond is True 
+
+! (NOT)
+returns False, if the answer returned is True 
+
+Operators control the flow of the program
+
+
+
+Try this in vscdoe:
+
+console.log(2+2);
+console.log(1+2+3+4+5);
+
+console.log(20 - 18);
+console.log(2 * 3)
+console.log(8 / 1);
+console.log(3 > 2);
+console.log(2 > 3);
+console.log(10 == 10);
+
+#number data type represent both 
+integer and decimal points
+
+to write exponent of something then use **
+
+10 ** 2 //100
+
+//to see the reminder of a Division
+
+16%8 //0
+//use paranthesis to group more compl calculation
+//using paranthesis control the calculation for precdence
+
+//if paranthesis is not used in the calculations, JavaScript follow the
+standar mathematical sequence of calculations
+
+
+'' empty strings
+"" empty string 
+
+-String cannot do one this: they cannot break into next line 
+if you tried to enter a string in multiple line, you get error
+ex:
+'Hello <breaking or goining to next line)
+    Error: SyntaxError
+
+You get this erro:
+'it's a lovely day' #Error syntx 
+
+//to avoid this, use ""
+"it's a lovely day"
+
+single = is for assigning value from right side of the = operator to the left side
+var score = 100
+
+== equality operator
+
+100 == 100 //True
+100 == "100" //True JS check if only if it is 100 is in left or not 
+//here only equality of value is checked
+//not data type is check 
+
+100 === "100"  //False
+
+to check number & data types we use ===
+==== is called strict equality operator 
+this operater === check both value and data type 
+
+
+
+opp to the equality operator 
+
+100 != 10 //True 
+
+1 != "1"  //False both vale is not same due to data type
+1 != 1 //False 
+
+1 !== "1" //True  (strict inequality operator)
+

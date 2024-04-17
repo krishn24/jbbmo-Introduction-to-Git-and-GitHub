@@ -1,0 +1,445 @@
+count in strings and list
+
+we can count individual character
+we can count substring
+
+string = "I have an apple"
+print(string.count("e"))
+
+#substring counting
+
+print(string.count("ha"))
+
+
+#we can use count() methods in list
+
+z = ["atom", 4, "atom", "neutron", 4, "protron"]
+
+print(z.count("4")) #we get 0 as there is no string 4
+print(z.count(4)) # 2 
+print(z.count("a")) # 0 why is that?
+Python is looking for the value "a" itself so, output was 0 
+
+print(z.count("atom")) #130
+
+#index() method:
+it searches for the given string or item provided
+
+music = "pull out your music and dancing can begin"
+print(music.index("m")) #14 this index position is the first occurence of m. if there was 2nd one it will display only the 1st occurence 
+
+print(music.index("your")) #9 indiex postion you starts at 9 
+
+bio = ["meta", "bio", "ology", []]
+
+print(bio.index("meta")) #130 
+print(bio.index([]))   #3 epty list searches
+
+print(bio.index(43))
+
+if an item is not in the list we get an error:
+value error or run time error.
+
+
+Split():
+
+ex:
+
+"leaders   and   best".split()
+-without any argument in split()
+-split() removes the spaces b/w the string
+-creates a list with no spaces
+
+["leaders", "and", "best"]
+
+-so, splits take a string and splits the words and put in a list 
+
+song = "The rain in Spain..."
+wds = song.split()
+print(wds)
+
+# ["The", "rain", "in", "Spain..."]
+
+>split() with argument 
+
+"leaders and best".split("e")
+["l", "ad", "rs and b", "st"]
+
+the arguemtn "e" will be the criteria for split along the string.
+
+
+>>opp to split() is join()
+
+using join we join items
+
+"/".join(["leaders", "and", "best"])
+# "leaders/and/best"
+
+wrd = ["red", "blue", "green"]
+glue = ";"
+
+s = glue.joint(wrd)
+print(s)  # red;blue;green
+
+print("***".join(wrd)) # red***blue***green
+print("".join(wds))  # redbluegreen
+
+sports = ["cricket", "football", "volleyball"]
+
+#to print all the elements in reverse order
+
+length_of_sports = len(sports)
+last = sports[(length_of_sports - 1):: -1]
+
+#to print last 3 elements:
+sports[-3:]
+
+Q) l = ['w', '7', 0, 9]
+m = l[1:2] 
+
+What is the type of m? ans) list 
+
+a slice returns a list,  no matter how large the slice.
+
+
+l = ['w', '7', 0, 9]
+m = l[1]
+
+what is the type of m? ans) string 
+
+the quotes around the number means that this is a string. 
+
+b = "my, what a loverly day"
+x = b.split(',')
+what is the type of x? ans) list 
+
+.split() returns a list 
+
+#NOTE:
+
+>>a slice returns a list,  no matter how large the slice.
+>>.split() returns a list 
+--------------------------------------
+Iterations:
+A basic building block of all programs is to able to repeat some code over and over again.
+this idea of repeating is iteration.
+
+>For loop
+>While loop 
+
+iterable works on any iterable (string, or a list of range function)
+
+
+for name in ["Pinky', 'Nivaan', 'Raji', 'Vayu']:
+    print("Hi ", name. " Please come to my party on Saturday!")
+
+In for loop we indent the code block to tell that the indented code block belongs to the for loop.
+
+for achar in "Go Spot Go":
+    print(achar)
+
+#
+G 
+o 
+
+S...
+
+s = "python rocks"
+for ch in s:
+    print("Hello")
+
+code will run 12 times Hello
+len of s 
+
+s = "python rocks"
+for ch in s[3:8]:
+   print("hello")
+
+iterates 5 times from 3 to 7 (5)
+
+fruits = []
+for afruit in fruits:
+    print(afruit) #prints all the fruits
+
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+
+for i in [0, 1, 2, 3]:
+    alex.forward(50)
+    alex.left(90)
+
+wn.exitonclick()
+
+loop variable I 
+sequenc:
+
+we are repeating the code 4 times  using the sequence.
+it desnot matter what we are using in the sequence
+for acolor in ["yellow", "red", "black", "white"]
+
+import turtle
+wn = turtle.Screen()
+
+alex.turtle.Turtle() 
+
+for aColor in ["yellow", "red", "black", "white"]:
+    alex.color(aColor)
+    alex.forward(50)
+    alex.left(90)
+
+wn.exitonclick()
+
+for idx in range(4):
+    square = idx * idx
+    print(squre0)
+
+# 0, 1, 4, 9
+
+0 * 0
+1* 1
+2 * 2
+3 * 3
+
+
+>How does python know what statements are contained in the loop body?
+They are indented to the same degree from the loop header.
+
+#print prime numbers:
+
+
+>>The accumulator pattern:
+nums = [1, 2, 3, 4, 5]
+accu = 0
+for w in nums:
+    accum = accum + w 
+print(accum)
+
+we need accumulator variable initialized with an initial value 
+(something to start with to get desired output)
+
+iterator variable (w) 
+update accumulator accum = accum + w 
+
+if you initialize variable inside a loop, will not cause error
+Assignment statements are pefectly legarl
+but, everytime it iterates the value will be set to 0 again 
+
+
+if we indent the print, the print statement runs on each iteration ..
+
+---
+range() function does not creates a list 
+to get the iterated values from range, enclosed in a list 
+
+print("range(5): ")
+for i in range(5):
+    print(i)
+
+print(list(range(0, 5)))  #produces a list 
+
+create number from 0 to 52 and add them to a list 
+
+numbers = []
+
+for i in range(0,53):
+    numbers.append(i)
+print(numbers)
+
+#count number of characters in strin1.
+do not use len() 
+
+str1 = "I like nonsense, it wakes up the brain cells."
+numbs = 0 
+
+for each_char in str1:
+    numbs += 1 
+print(numbs)
+
+#create a list of num 0 to 40
+perfom sum 
+
+numbers = []
+sum1 = 0 
+
+for i in range(0, 41):
+    numbers.append(i)
+    sum1 = sum1 + i 
+print(sum1)
+print(numbers)
+
+# to print this pattern:
+
+0 Horizon FW 
+1 HZD
+2 Forzone wilds 
+
+
+games = ["Horizon FW", "ZD", "Frozon Wilds"]
+for n in range(3):
+    print(n, games[n])
+
+#to make the iterantion more general 
+use len() function
+
+for in in range(len(games)):
+
+#How many times the letter "P" printed by the following statment?
+
+s = "Python"
+for idx in range(len(s)):
+    print(s[idx % 2])
+
+ans) idx % 2 is 0 whenever idx is even
+answer is 3 times 
+-----------------------
+Nested Iteration: Image processing
+
+Two dimensional tables have both rows and columns:
+
+A digital image is a finite collection of small, 
+discret picture element called "pixel"
+
+-this pixels are organized in a two-dimensialnl grid.
+-each pixel represents the samllest amount of picture iinforamtion.
+
+Each image (gird of pixels) has its own width and its own height.
+-width is num of columns 
+-height is the number of rows 
+
+-each pixel of the image will represent a single color.
+-specific color depends on a formula that miexes various amounts of three basic colors: 
+red, green, and blue.
+
+-this technique for creating color is known as the "RGB Color Model".
+
+-the amount of each color, sometimes called the intensity of the color.
+-the minimum intensity of a color value is 0
+-if red has intensity color value = 0 it means there is n o red in the pixel 
+-the maximum intensity is 255.
+-this means there are 256 different varient intensity for each basic color 
+-since there are three basic colors that means you can create 255 power 3 distinct colors using the RGB color model 
+
+#black is represented by not having basic color.
+
+#white has maximum value for all three basic color components.
+
+-to manipulate an image, we need to be able to access individual pixels.
+-this capability is provided by a modle "image"
+-this "image" modules defines two classes - image & pixel 
+
+-each pixel object has three attributes - 
+>red intensity 
+>green intensity 
+>blue intensity 
+-Pixel provides three methods that allow us to ask for intensity values.
+>getRed
+>getGreen
+>getBlue 
+
+-in addition we can ask a pixel to change an intensity value using:
+>setRed
+>setBlue
+>setGreen
+
+-ex:
+method          name:    example        explanoation
+Pixel(r,g,b)    Pixel(20, 100, 50)      create a new pixel with 20 red, 100 green, and 50 blue 
+
+if you have a pixel whose RGB value is (50,0,0)
+R = 50; the value close to 0 will be darker
+so, ans) Dark Red 
+
+########way of the programmer:
+
+when you give variable names to an interater:
+give plural name 
+
+when you use the variable for a for loop use singluar name 
+
+ex:
+
+Fruits = [...]
+for fruit 
+
+-While nameing do not use x and y names
+-use plural nouns for sequence 
+-singular noun for loop variables 
+
+#printing intermediate results
+
+w = range(10)
+
+tot = 0 
+for num in w:
+    tot += num 
+print(tot)
+
+# total of 10 numbers should be 55 but, we got 45 
+
+-good to have some intermeidate print statements
+-so you you can track current values 
+w = range(10)
+
+tot = 0 
+for num in w:
+    print(num) # you can see what number are being printed
+    tot += num 
+print(tot)
+
+
+w = range(10)
+
+tot = 0 
+for num in w:
+    print(num) # you can see what number are being printed
+    tot += num 
+    print(tot) # you can see value of each iteration 
+print(tot)
+
+we can track each iteration 
+
+ex:
+w = range(10)
+
+tot = 0 
+print("**** before the for loop *****")
+
+for num in w:
+    print("***** A New loop iteration **** ")
+    print("Value of num: ", num)
+    tot += num 
+    print("value of tot:", tot)
+
+print("***** End of For Loop ***** ")
+print("Final total:", tot)
+
+using print statemetn is like performing diagnostics.
+
+y = 18 
+for z in y:
+    print(z)
+
+NOTE: #we get error because we cannot iterate over integers and floats.
+NOTE: we cannot iterate over integers and float 
+
+t = ("couch", "chair", "washer", "dryer", "table")
+for z in t:
+    print(z)
+
+above# type of iterable is "tuple"
+
+what is the type of iterarot variabe?
+t = ["couch", "chair", "dry"]
+for z in t:
+    print(z)
+
+z is a string 
+
+what is the type of iterator variable in the first iteration?
+t =[9, "setter", 3, 10]
+for z in t:
+    print(z)
+on the first iteration: z is integer 
+
+
